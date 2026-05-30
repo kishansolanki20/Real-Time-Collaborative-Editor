@@ -1,0 +1,20 @@
+{
+    "name": "realtimeeditor",
+    "version": "1.0.0",
+    "description": "editor system",
+    "keywords": [
+        "node"
+    ],
+    "license": "ISC",
+    "author": "Kishan Singh",
+    "type": "commonjs",
+    "main": "app.js",
+    "scripts": {
+        "start": "node src/server.js"
+    },
+    "dependencies": {
+        "cors": "^2.8.6",
+        "express": "^5.2.1",
+        "socket.io": "^4.8.3"
+    }
+}
