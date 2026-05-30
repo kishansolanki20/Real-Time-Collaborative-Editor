@@ -6,12 +6,8 @@ const path = require('path');
 // const { Server } = require("socket.io")
 // const io = new Server(server)
 
-app.use(express.static("build"))
-// app.get("/", (req,res) => {
-//     return res.sendFile("/public/index.html")
-// })
-app.use((req, res, next) => {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+app.get("/", (req, res) => {
+    res.send("Backend is running");
 });
 module.exports = app
 
